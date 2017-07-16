@@ -5,8 +5,10 @@ using Net.Chdk.Meta.Providers.Camera.Ps;
 
 namespace Net.Chdk.Meta.Providers.Camera.Sdm
 {
-    sealed class SdmRevisionProvider : RevisionProvider
+    sealed class SdmRevisionProvider : ProductRevisionProvider
     {
+        public override string ProductName => "SDM";
+
         public override RevisionData GetRevision(string revision, TreeRevisionData treeRevision, ListPlatformData list, TreePlatformData tree)
         {
             var key = treeRevision.Source?.Revision ?? revision;

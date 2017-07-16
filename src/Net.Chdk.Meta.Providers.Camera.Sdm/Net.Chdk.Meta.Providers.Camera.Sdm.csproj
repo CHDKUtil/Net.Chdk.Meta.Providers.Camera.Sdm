@@ -31,8 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Camera.Base\src\Net.Chdk.Meta.Providers.Camera.Base\Net.Chdk.Meta.Providers.Camera.Base.csproj" />
-    <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Camera.Core\src\Net.Chdk.Meta.Providers.Camera.Core\Net.Chdk.Meta.Providers.Camera.Core.csproj" />
     <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Camera.Ps.Core\src\Net.Chdk.Meta.Providers.Camera.Ps.Core\Net.Chdk.Meta.Providers.Camera.Ps.Core.csproj" />
     <ProjectReference Include="..\..\..\Net.Chdk.Meta.Providers.Camera.Ps\src\Net.Chdk.Meta.Providers.Camera.Ps\Net.Chdk.Meta.Providers.Camera.Ps.csproj" />
   </ItemGroup>

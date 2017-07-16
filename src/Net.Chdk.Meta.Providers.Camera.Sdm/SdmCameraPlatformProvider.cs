@@ -4,8 +4,10 @@ using System.Linq;
 
 namespace Net.Chdk.Meta.Providers.Camera.Sdm
 {
-    sealed class SdmCameraPlatformProvider : CameraPlatformProvider
+    sealed class SdmCameraPlatformProvider : ProductCameraPlatformProvider
     {
+        public override string ProductName => "SDM";
+
         protected override T TryGetValue<T>(IDictionary<string, T> values, string platform)
         {
             return values.SingleOrDefault(kvp => IsMatch(kvp.Key, platform)).Value;

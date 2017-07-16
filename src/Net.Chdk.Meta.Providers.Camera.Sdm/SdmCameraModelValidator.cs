@@ -2,12 +2,14 @@
 
 namespace Net.Chdk.Meta.Providers.Camera.Sdm
 {
-    sealed class SdmCameraModelValidator : CameraModelValidator
+    sealed class SdmCameraModelValidator : ProductCameraModelValidator
     {
         public SdmCameraModelValidator(ILogger<SdmCameraModelValidator> logger)
             : base(logger)
         {
         }
+
+        public override string ProductName => "SDM";
 
         protected override void OnListRevisionMissing(string platform, string revision)
         {
