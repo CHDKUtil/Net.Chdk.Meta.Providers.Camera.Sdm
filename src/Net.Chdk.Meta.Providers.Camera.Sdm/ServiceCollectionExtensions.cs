@@ -8,6 +8,7 @@ namespace Net.Chdk.Meta.Providers.Camera.Sdm
         public static IServiceCollection AddSdmProviders(this IServiceCollection serviceCollection)
         {
             return serviceCollection
+                .AddPsCameraProviders()
                 .AddSingleton<IAltProvider, SdmAltProvider>()
                 .AddSingleton<ICameraPlatformProvider, SdmCameraPlatformProvider>()
                 .AddSingleton<IRevisionProvider, SdmRevisionProvider>()
