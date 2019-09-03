@@ -1,17 +1,13 @@
 ﻿using Microsoft.Extensions.Logging;
+using Net.Chdk.Meta.Providers.Camera.Ps;
 
 namespace Net.Chdk.Meta.Providers.Camera.Sdm
 {
-    sealed class SdmCameraValidator : ProductCameraValidator
+    sealed class SdmCameraValidator : PsCameraValidator
     {
         public SdmCameraValidator(ILogger<SdmCameraValidator> logger)
             : base(logger)
         {
-        }
-
-        protected override void OnListPlatformMissing(string platform)
-        {
-            Logger.LogWarning("{0} missing from list", platform);
         }
 
         public override string ProductName => "SDM";
